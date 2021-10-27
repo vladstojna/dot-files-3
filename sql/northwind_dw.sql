@@ -39,7 +39,7 @@ CREATE TABLE DimShipper (
 );
 
 CREATE TABLE DimTime (
-    TimeID DATETIME,
+    TimeID DATE,
     YearID INTEGER NOT NULL,
     MonthID INTEGER NOT NULL,
     MonthName CHAR(3) NOT NULL,
@@ -58,7 +58,7 @@ CREATE TABLE FactOrder (
     ProductSurrogateID INTEGER,
     SupplierID INTEGER,
     ShipperID INTEGER,
-    TimeID DATETIME,
+    TimeID DATE,
     CONSTRAINT PK_FactOrder PRIMARY KEY (OrderID, ProductID),
     FOREIGN KEY (CustomerID) REFERENCES DimCustomer (CustomerID),
     FOREIGN KEY (ProductSurrogateID) REFERENCES DimProduct (ProductSurrogateID),
