@@ -15,12 +15,12 @@ CREATE TABLE DimCustomer (
 
 CREATE TABLE DimProduct (
     ProductSurrogateID INTEGER,
-    ProductID INTEGER NOT NULL,
-    ProductName VARCHAR(40) NOT NULL,
-    CategoryName VARCHAR(15) NOT NULL,
+    ProductID INTEGER,
+    ProductName VARCHAR(40),
+    CategoryName VARCHAR(15),
     Version INTEGER NOT NULL,
-    DateFrom DATETIME NOT NULL,
-    DateTo DATETIME NOT NULL,
+    DateFrom DATETIME,
+    DateTo DATETIME,
     PRIMARY KEY (ProductSurrogateID)
 );
 
