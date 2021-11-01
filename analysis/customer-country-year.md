@@ -34,7 +34,7 @@ List the sales per year:
 ```mdx
 SELECT
     Measures.Sales ON COLUMNS,
-    Time.Year.Members, Measures.Sales ON ROWS
+    Time.Year.Members ON ROWS
 FROM Orders
 ```
 
