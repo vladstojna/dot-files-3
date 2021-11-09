@@ -9,8 +9,8 @@ The codeshould be formatted and indented in a way that makes it easy to read for
 
 
 # For each transformation/job that you develop in PDI,present:
-•a screenshot of the entire transformation/job,
-•screenshots  of  the  configuration  window  and  of  the  preview  window  for  each  step(for transformations only).
+•**a screenshot** of the entire transformation/job,
+•**screenshots**  of  the  configuration  window  and  of  the  preview  window  for  each  step(for transformations only).
 
 [DimCustomer](https://github.com/vladstojna/dot-files-3/pull/2/commits/e8e21f8e70bf0751883df144298c5486062e2b23)</br>
 [DimProduct](https://github.com/vladstojna/dot-files-3/pull/2/commits/4ae579d2f9acb78516fd140af6938d8d01c358ad)</br>
@@ -28,7 +28,7 @@ The codeshould be formatted and indented in a way that makes it easy to read for
 
 # For each analysis query that you develop in Saiku, present one of the following:
 •If  you  developed  the  query bydrag-and-drop, present  a  screenshot  of  the  Saiku user interface, showing the measures, columns, rows and filters used in the query, together with the query results.
-•If you developed the query in MDX mode, present the MDX code together with a screenshot of the query results.
+•If you developed the query in MDX mode, present the MDX code together with **a screenshot of the query results**.
 
 [a)Customer country and year](https://github.com/vladstojna/dot-files-3/pull/4/commits/194775e34704e124e0d468fd2cfa453d75b18676)</br>
 [b)Product category and year](https://github.com/vladstojna/dot-files-3/pull/4/commits/2f95c85d0ac2ea87c8cabcbd81b9e535847f89bd)</br>
