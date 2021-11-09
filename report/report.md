@@ -8,6 +8,8 @@ The codeshould be formatted and indented in a way that makes it easy to read for
 
 ## Transformations & Jobs
 
+For readability purposes, all preview results have been limited to 10 rows if 10 or more rows exist.
+
 ### [Customer Dimension](../etl/DimCustomer.ktr)
 
 ![Transformation](screenshots/DimCustomer/DimCustomer.png)
