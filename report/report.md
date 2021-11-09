@@ -40,6 +40,16 @@ Insert/Update
 
 ![Transformation](screenshots/DimSupplier/DimSupplier.png)
 
+Table Input
+
+![Configuration](screenshots/DimSupplier/TableInput.configuration.png)
+![Preview](screenshots/DimSupplier/TableInput.preview.png)
+
+Insert/Update
+
+![Configuration](screenshots/DimSupplier/InsertUpdate.configuration.png)
+![Preview](screenshots/DimSupplier/InsertUpdate.preview.png)
+
 ### [DimTime](../etl/DimTime.ktr)
 
 ![Transformation](screenshots/DimTime/DimTime.png)
