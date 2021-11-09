@@ -6,19 +6,31 @@ The codeshould be formatted and indented in a way that makes it easy to read for
 
 [northwind_dw.sql](../sql/northwind_dw.sql)
 
-## For each transformation/job that you develop in PDI, present
+## Transformations & Jobs
 
-**a screenshot** of the entire transformation/job
+### [DimCustomer](../etl/DimCustomer.ktr)
 
-**screenshots** of the configuration window and of the preview window for each step (for transformations only)
+![DimCustomer](screenshots/DimCustomer/DimCustomer.png)
 
-* [DimCustomer](../etl/DimCustomer.ktr)
+#### Table Input
+
+![Configuration](screenshots/DimCustomer/TableInput.configuration.png)
+![Preview](screenshots/DimCustomer/TableInput.preview.png)
+
+#### Insert/Update
+
+![Configuration](screenshots/DimCustomer/InsertUpdate.configuration.png)
+![Configuration](screenshots/DimCustomer/InsertUpdate.preview.png)
+
 * [DimProduct](../etl/DimProduct.ktr)
 * [DimShipper](../etl/DimShipper.ktr)
 * [DimSupplier](../etl/DimSupplier.ktr)
 * [DimTime](../etl/DimTime.ktr)
 * [FactOrder](../etl/FactOrder.ktr)
-* [LoadDw](../etl/LoadDw.kjb)
+
+### Job to Populate the Data Warehouse
+
+![LoadDw](screenshots/LoadDw.png)
 
 ## Present the XML code for the cube definition. The code should be formatted and indented in a way that makes it easy to read for a human
 
