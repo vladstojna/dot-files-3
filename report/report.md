@@ -164,6 +164,18 @@ Insert/Update
 
 ### a) [Analyze sales by customer country and year to discover the country, the year, and the pair country-year with the most sales](../analysis/customer-country-year.md)
 
+Customer country with most sales
+
+![Results](screenshots/queries/customer-country-most-sales.png)
+
+Year with most sales
+
+![Results](screenshots/queries/year-most-sales.png)
+
+Customer country and year pair with most sales
+
+![Results](screenshots/queries/customer-country-year-pair-most-sales.png)
+
 ### b) [Analyze sales by product category and year to discover the category, the year, and the pair category-year with the most sales](../analysis/product-category-year.md)
 
 ### c) [Analyze quantity by shipping company and year to discover the shipper, the year, and the pair shipper-year with the most quantity](../analysis/shipping-company-year.md)
