@@ -206,6 +206,10 @@ Shipping company and year pair with the most quantity shipped
 
 ### d) [Analyze sales by customer country and product category to identify the pairs of country-category with no sales at all](../analysis/customer-country-product-category.md)
 
+Customer country and category pairs with no sales
+
+![Results](screenshots/queries/customer-country-product-category-no-sales.png)
+
 ### e) [Analyze quantity by supplier country and customer country to identify the pairs of countries with no quantities being shipped between them](../analysis/supplier-country-customer-country.md)
 
 ### f) [Analyze quantity by product category and shipping company to identify the pairs of category-shipper with no quantity at all](../analysis/product-category-shipping-company.md)
