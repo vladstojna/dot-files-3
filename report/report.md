@@ -22,11 +22,25 @@ The codeshould be formatted and indented in a way that makes it easy to read for
 ![Configuration](screenshots/DimCustomer/InsertUpdate.configuration.png)
 ![Configuration](screenshots/DimCustomer/InsertUpdate.preview.png)
 
-* [DimProduct](../etl/DimProduct.ktr)
-* [DimShipper](../etl/DimShipper.ktr)
-* [DimSupplier](../etl/DimSupplier.ktr)
-* [DimTime](../etl/DimTime.ktr)
-* [FactOrder](../etl/FactOrder.ktr)
+### [DimShipper](../etl/DimShipper.ktr)
+
+![DimShipper](screenshots/DimShipper/DimShipper.png)
+
+### [DimSupplier](../etl/DimSupplier.ktr)
+
+![DimSupplier](screenshots/DimSupplier/DimSupplier.png)
+
+### [DimTime](../etl/DimTime.ktr)
+
+![DimTime](screenshots/DimTime/DimTime.png)
+
+### [DimProduct](../etl/DimProduct.ktr)
+
+![DimProduct](screenshots/DimProduct/DimProduct.png)
+
+### [FactOrder](../etl/FactOrder.ktr)
+
+![FactOrder](screenshots/FactOrder/FactOrder.png)
 
 ### Job to Populate the Data Warehouse
 
