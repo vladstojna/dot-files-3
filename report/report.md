@@ -162,9 +162,14 @@ Insert/Update
 
 ## Analysis Queries
 
-1. [Customer country and year](../analysis/customer-country-year.md)
-2. [Product category and year](../analysis/product-category-year.md)
-3. [Shipping company and year](../analysis/shipping-company-year.md)
-4. [Customer country and product category](../analysis/customer-country-product-category.md)
-5. [Supplier country and customer country](../analysis/supplier-country-customer-country.md)
-6. [Product category and shipping company](../analysis/product-category-shipping-company.md)
+### a) [Analyze sales by customer country and year to discover the country, the year, and the pair country-year with the most sales](../analysis/customer-country-year.md)
+
+### b) [Analyze sales by product category and year to discover the category, the year, and the pair category-year with the most sales](../analysis/product-category-year.md)
+
+### c) [Analyze quantity by shipping company and year to discover the shipper, the year, and the pair shipper-year with the most quantity](../analysis/shipping-company-year.md)
+
+### d) [Analyze sales by customer country and product category to identify the pairs of country-category with no sales at all](../analysis/customer-country-product-category.md)
+
+### e) [Analyze quantity by supplier country and customer country to identify the pairs of countries with no quantities being shipped between them](../analysis/supplier-country-customer-country.md)
+
+### f) [Analyze quantity by product category and shipping company to identify the pairs of category-shipper with no quantity at all](../analysis/product-category-shipping-company.md)
