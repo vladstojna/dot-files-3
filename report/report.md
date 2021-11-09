@@ -8,6 +8,8 @@
 
 For readability purposes, all preview results have been limited to 10 rows if 10 or more rows exist.
 
+---
+
 ### [Customer Dimension](../etl/DimCustomer.ktr)
 
 ![Transformation](screenshots/DimCustomer/DimCustomer.png)
@@ -21,6 +23,8 @@ Insert/Update
 
 ![Configuration](screenshots/DimCustomer/InsertUpdate.configuration.png)
 ![Preview](screenshots/DimCustomer/InsertUpdate.preview.png)
+
+---
 
 ### [Shipper Dimension](../etl/DimShipper.ktr)
 
@@ -36,6 +40,8 @@ Insert/Update
 ![Configuration](screenshots/DimShipper/InsertUpdate.configuration.png)
 ![Preview](screenshots/DimShipper/InsertUpdate.preview.png)
 
+---
+
 ### [Supplier Dimension](../etl/DimSupplier.ktr)
 
 ![Transformation](screenshots/DimSupplier/DimSupplier.png)
@@ -49,6 +55,8 @@ Insert/Update
 
 ![Configuration](screenshots/DimSupplier/InsertUpdate.configuration.png)
 ![Preview](screenshots/DimSupplier/InsertUpdate.preview.png)
+
+---
 
 ### [Time Dimension](../etl/DimTime.ktr)
 
@@ -73,6 +81,8 @@ Insert/Update
 
 ![Configuration](screenshots/DimTime/InsertUpdate.configuration.png)
 ![Preview](screenshots/DimTime/InsertUpdate.preview.png)
+
+---
 
 ### [Product Dimension](../etl/DimProduct.ktr)
 
@@ -107,6 +117,8 @@ Dimension Lookup/Update
 
 ![Configuration](screenshots/DimProduct/DimensionLookupUpdate.configuration.png)
 ![Preview](screenshots/DimProduct/DimensionLookupUpdate.preview.png)
+
+---
 
 ### [Orders Fact Table](../etl/FactOrder.ktr)
 
@@ -151,6 +163,8 @@ Insert/Update
 
 ![Configuration](screenshots/FactOrder/InsertUpdate.configuration.png)
 ![Preview](screenshots/FactOrder/InsertUpdate.preview.png)
+
+---
 
 ### [Job to Populate the Data Warehouse](../etl/LoadDw.kjb)
 
