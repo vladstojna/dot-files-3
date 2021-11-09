@@ -8,7 +8,7 @@ The codeshould be formatted and indented in a way that makes it easy to read for
 
 ## Transformations & Jobs
 
-### [DimCustomer](../etl/DimCustomer.ktr)
+### [Customer Dimension](../etl/DimCustomer.ktr)
 
 ![Transformation](screenshots/DimCustomer/DimCustomer.png)
 
@@ -22,7 +22,7 @@ Insert/Update
 ![Configuration](screenshots/DimCustomer/InsertUpdate.configuration.png)
 ![Preview](screenshots/DimCustomer/InsertUpdate.preview.png)
 
-### [DimShipper](../etl/DimShipper.ktr)
+### [Shipper Dimension](../etl/DimShipper.ktr)
 
 ![Transformation](screenshots/DimShipper/DimShipper.png)
 
@@ -36,7 +36,7 @@ Insert/Update
 ![Configuration](screenshots/DimShipper/InsertUpdate.configuration.png)
 ![Preview](screenshots/DimShipper/InsertUpdate.preview.png)
 
-### [DimSupplier](../etl/DimSupplier.ktr)
+### [Supplier Dimension](../etl/DimSupplier.ktr)
 
 ![Transformation](screenshots/DimSupplier/DimSupplier.png)
 
@@ -50,7 +50,7 @@ Insert/Update
 ![Configuration](screenshots/DimSupplier/InsertUpdate.configuration.png)
 ![Preview](screenshots/DimSupplier/InsertUpdate.preview.png)
 
-### [DimTime](../etl/DimTime.ktr)
+### [Time Dimension](../etl/DimTime.ktr)
 
 ![Transformation](screenshots/DimTime/DimTime.png)
 
@@ -74,7 +74,7 @@ Insert/Update
 ![Configuration](screenshots/DimTime/InsertUpdate.configuration.png)
 ![Preview](screenshots/DimTime/InsertUpdate.preview.png)
 
-### [DimProduct](../etl/DimProduct.ktr)
+### [Product Dimension](../etl/DimProduct.ktr)
 
 ![Transformation](screenshots/DimProduct/DimProduct.png)
 
@@ -108,7 +108,7 @@ Dimension Lookup/Update
 ![Configuration](screenshots/DimProduct/DimensionLookupUpdate.configuration.png)
 ![Preview](screenshots/DimProduct/DimensionLookupUpdate.preview.png)
 
-### [FactOrder](../etl/FactOrder.ktr)
+### [Orders Fact Table](../etl/FactOrder.ktr)
 
 ![Transformation](screenshots/FactOrder/FactOrder.png)
 
@@ -152,7 +152,7 @@ Insert/Update
 ![Configuration](screenshots/FactOrder/InsertUpdate.configuration.png)
 ![Preview](screenshots/FactOrder/InsertUpdate.preview.png)
 
-### Job to Populate the Data Warehouse
+### [Job to Populate the Data Warehouse](../etl/LoadDw.kjb)
 
 ![LoadDw](screenshots/LoadDw.png)
 
