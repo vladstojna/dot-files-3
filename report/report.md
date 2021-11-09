@@ -192,6 +192,18 @@ Product category and year pair with most sales
 
 ### c) [Analyze quantity by shipping company and year to discover the shipper, the year, and the pair shipper-year with the most quantity](../analysis/shipping-company-year.md)
 
+Shipping company with the most quantity shipped
+
+![Results](screenshots/queries/shipper-most-quantity.png)
+
+Year with the most quantity shipped
+
+![Results](screenshots/queries/year-most-quantity.png)
+
+Shipping company and year pair with the most quantity shipped
+
+![Results](screenshots/queries/shipper-year-pair-most-quantity.png)
+
 ### d) [Analyze sales by customer country and product category to identify the pairs of country-category with no sales at all](../analysis/customer-country-product-category.md)
 
 ### e) [Analyze quantity by supplier country and customer country to identify the pairs of countries with no quantities being shipped between them](../analysis/supplier-country-customer-country.md)
