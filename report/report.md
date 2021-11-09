@@ -178,6 +178,18 @@ Customer country and year pair with most sales
 
 ### b) [Analyze sales by product category and year to discover the category, the year, and the pair category-year with the most sales](../analysis/product-category-year.md)
 
+Product category with most sales
+
+![Results](screenshots/queries/product-category-most-sales.png)
+
+Year with most sales
+
+![Results](screenshots/queries/year-most-sales.png)
+
+Product category and year pair with most sales
+
+![Results](screenshots/queries/product-category-year-most-sales.png)
+
 ### c) [Analyze quantity by shipping company and year to discover the shipper, the year, and the pair shipper-year with the most quantity](../analysis/shipping-company-year.md)
 
 ### d) [Analyze sales by customer country and product category to identify the pairs of country-category with no sales at all](../analysis/customer-country-product-category.md)
