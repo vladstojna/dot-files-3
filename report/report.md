@@ -112,6 +112,46 @@ Dimension Lookup/Update
 
 ![Transformation](screenshots/FactOrder/FactOrder.png)
 
+Table Input (1)
+
+![Configuration](screenshots/FactOrder/TableInput.1.configuration.png)
+![Preview](screenshots/FactOrder/TableInput.1.preview.png)
+
+Select Values (1)
+
+![Configuration](screenshots/FactOrder/SelectValues.1.configuration.png)
+![Preview](screenshots/FactOrder/SelectValues.1.preview.png)
+
+Table Input (2)
+
+![Configuration](screenshots/FactOrder/TableInput.2.configuration.png)
+![Preview](screenshots/FactOrder/TableInput.2.preview.png)
+
+Select Values (2)
+
+![Configuration](screenshots/FactOrder/SelectValues.2.configuration.png)
+![Preview](screenshots/FactOrder/SelectValues.2.preview.png)
+
+Join Rows
+
+![Configuration](screenshots/FactOrder/JoinRows.configuration.png)
+![Preview](screenshots/FactOrder/JoinRows.preview.png)
+
+Calculator
+
+![Configuration](screenshots/FactOrder/Calculator.configuration.png)
+![Preview](screenshots/FactOrder/Calculator.preview.png)
+
+Database Lookup
+
+![Configuration](screenshots/FactOrder/DatabaseLookup.configuration.png)
+![Preview](screenshots/FactOrder/DatabaseLookup.preview.png)
+
+Insert/Update
+
+![Configuration](screenshots/FactOrder/InsertUpdate.configuration.png)
+![Preview](screenshots/FactOrder/InsertUpdate.preview.png)
+
 ### Job to Populate the Data Warehouse
 
 ![LoadDw](screenshots/LoadDw.png)
