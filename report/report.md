@@ -311,43 +311,110 @@ Insert/Update
 
 ### a) [Analyze sales by customer country and year to discover the country, the year, and the pair country-year with the most sales](../analysis/customer-country-year.md)
 
-Customer country with most sales
+Get the customer country with the most sales:
+
+```mdx
+SELECT
+    Measures.Sales ON COLUMNS,
+    TopCount(Customer.Country.Members, 1, Measures.Sales) ON ROWS
+FROM Orders
+```
 
 ![Results](screenshots/queries/customer-country-most-sales.png)
 
-Year with most sales
+Get the year with the most sales:
+
+```mdx
+SELECT
+    Measures.Sales ON COLUMNS,
+    TopCount(Time.Year.Members, 1, Measures.Sales) ON ROWS
+FROM Orders
+```
 
 ![Results](screenshots/queries/year-most-sales.png)
 
-Customer country and year pair with most sales
+Get the customer country and year pair with the most sales:
+
+```mdx
+SELECT
+    Measures.Sales ON COLUMNS,
+    TopCount(
+        NonEmptyCrossJoin(Customer.Country.Members, Time.Year.Members),
+    1, Measures.Sales) ON ROWS
+FROM Orders
+```
 
 ![Results](screenshots/queries/customer-country-year-pair-most-sales.png)
 
 ### b) [Analyze sales by product category and year to discover the category, the year, and the pair category-year with the most sales](../analysis/product-category-year.md)
 
-Product category with most sales
+Get the product category with the most sales:
+
+```mdx
+SELECT
+    Measures.Sales ON COLUMNS,
+    TopCount(Product.[Category Name].Members, 1, Measures.Sales) ON ROWS
+FROM Orders
+```
 
 ![Results](screenshots/queries/product-category-most-sales.png)
 
-Year with most sales
+Get the year with the most sales (same as above):
+
+```mdx
+SELECT
+    Measures.Sales ON COLUMNS,
+    TopCount(Time.Year.Members, 1, Measures.Sales) ON ROWS
+FROM Orders
+```
 
 ![Results](screenshots/queries/year-most-sales.png)
 
-Product category and year pair with most sales
+Get the product category and year pair with most sales:
+
+```mdx
+SELECT Measures.Sales ON COLUMNS,
+    TopCount(
+        NonEmptyCrossJoin(Product.[Category Name].Members, Time.Year.Members),
+    1, Measures.Sales) ON ROWS
+FROM Orders
+```
 
 ![Results](screenshots/queries/product-category-year-most-sales.png)
 
 ### c) [Analyze quantity by shipping company and year to discover the shipper, the year, and the pair shipper-year with the most quantity](../analysis/shipping-company-year.md)
 
-Shipping company with the most quantity shipped
+Get the shipping company with the most quantity shipped:
+
+```mdx
+SELECT
+    Measures.Quantity ON COLUMNS,
+    TopCount(Shipper.[Company Name].Members, 1, Measures.Quantity) ON ROWS
+FROM Orders
+```
 
 ![Results](screenshots/queries/shipper-most-quantity.png)
 
-Year with the most quantity shipped
+Get the year with the most quantity shipped:
+
+```mdx
+SELECT
+    Measures.Quantity ON COLUMNS,
+    TopCount(Time.Year.Members, 1, Measures.Quantity) ON ROWS
+FROM Orders
+```
 
 ![Results](screenshots/queries/year-most-quantity.png)
 
-Shipping company and year pair with the most quantity shipped
+Get the shipping company and year pair with the most quantity shipped:
+
+```mdx
+SELECT Measures.Quantity ON COLUMNS,
+    TopCount(
+        NonEmptyCrossJoin(Shipper.[Company Name].Members, Time.Year.Members),
+    1, Measures.Quantity) ON ROWS
+FROM Orders
+```
 
 ![Results](screenshots/queries/shipper-year-pair-most-quantity.png)
 
