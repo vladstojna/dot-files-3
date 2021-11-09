@@ -4,8 +4,6 @@
 
 The codeshould be formatted and indented in a way that makes it easy to read for a human.
 
-[northwind.sql](../sql/northwind.sql)
-
 [northwind_dw.sql](../sql/northwind_dw.sql)
 
 ## For each transformation/job that you develop in PDI, present
