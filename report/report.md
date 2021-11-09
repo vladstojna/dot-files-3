@@ -234,3 +234,8 @@ TODO: insert mdx query
 ![Results](screenshots/queries/category-shipper-pairs-with-no-quantity.2.png)
 
 The table has no empty cells, therefore all categories have been shipped by all shipping companies.
+
+## Appendix
+
+For additional information, developed code can be found
+[here](https://github.com/vladstojna/dot-files-3).
