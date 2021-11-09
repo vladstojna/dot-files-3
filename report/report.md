@@ -353,13 +353,79 @@ Shipping company and year pair with the most quantity shipped
 
 ### d) [Analyze sales by customer country and product category to identify the pairs of country-category with no sales at all](../analysis/customer-country-product-category.md)
 
-Customer country and category pairs with no sales
+To get a general view of customer countries and product categories execute the following query:
+
+```mdx
+SELECT
+    NON EMPTY Product.[Category Name].Members ON COLUMNS,
+    Customer.Country.Members ON ROWS
+FROM Orders
+WHERE Measures.Sales
+```
+
+However, as the database grows, it will become more and more difficult to
+correctly identify all the relevant cells.
+For a more compact result with only the relevant sales, execute:
+
+```mdx
+WITH
+SET ValidCategories AS
+    Filter(
+        Product.[Category Name].Members,
+        Cast(Product.[Category Name].CurrentMember.Properties('Key') AS STRING) <> '#null')
+
+SET ValidCountries AS
+    Filter(
+        Customer.Country.Members,
+        Cast(Customer.Country.CurrentMember.Properties('Key') AS STRING) <> '#null')
+
+MEMBER Measures.[Has Sales] AS
+    NOT Measures.Sales IS EMPTY
+
+SELECT
+    Measures.[Has Sales] ON COLUMNS,
+    Filter(
+        CrossJoin(ValidCountries, ValidCategories),
+        NOT Cast(Measures.[Has Sales] AS BOOLEAN)) ON ROWS
+FROM Orders
+```
 
 ![Results](screenshots/queries/customer-country-product-category-no-sales.png)
 
 ### e) [Analyze quantity by supplier country and customer country to identify the pairs of countries with no quantities being shipped between them](../analysis/supplier-country-customer-country.md)
 
-Country pairs with no quantity shipped: the first column represents the country shipped from,
+For an overview of supplier and customer countries, execute:
+
+```mdx
+SELECT
+    Supplier.Country.Members ON COLUMNS,
+    Customer.Country.Members ON ROWS
+FROM Orders
+WHERE Measures.Quantity
+```
+
+However, like the situation above, relevant cells may become more difficult to identify as the data set grows.
+For a more compact representation, execute:
+
+```mdx
+WITH
+SET ValidCountries AS
+    Filter(
+        Customer.Country.Members,
+        Cast(Customer.Country.CurrentMember.Properties('Key') AS STRING) <> '#null')
+
+MEMBER Measures.[Any Quantity Shipped] AS
+    NOT Measures.Quantity IS EMPTY
+
+SELECT
+    Measures.[Any Quantity Shipped] ON COLUMNS,
+    Filter(
+        CrossJoin(Supplier.Country.Members, ValidCountries),
+        NOT Cast(Measures.[Any Quantity Shipped] AS BOOLEAN)) ON ROWS
+FROM Orders
+```
+
+The first column represents the country shipped from,
 i.e., the supplier's country; the second column represents the country shipped to,
 i.e., the customer's country.
 
@@ -368,7 +434,25 @@ i.e., the customer's country.
 
 ### f) [Analyze quantity by product category and shipping company to identify the pairs of category-shipper with no quantity at all](../analysis/product-category-shipping-company.md)
 
-Category-shipper pairs with no quantity
+To get only the product category and shipper pairs with no quantity, execute:
+
+```mdx
+WITH
+SET ValidCategories AS
+    Filter(
+        Product.[Category Name].Members,
+        Cast(Product.[Category Name].CurrentMember.Properties('Key') AS STRING) <> '#null')
+
+MEMBER Measures.[Any Quantity Shipped] AS
+    NOT Measures.Quantity IS EMPTY
+
+SELECT
+    Measures.[Any Quantity Shipped] ON COLUMNS,
+    Filter(
+        CrossJoin(Shipper.[Company Name].Members, ValidCategories),
+        NOT Cast(Measures.[Any Quantity Shipped] AS BOOLEAN)) ON ROWS
+FROM Orders
+```
 
 ![Results](screenshots/queries/category-shipper-pairs-with-no-quantity.1.png)
 
@@ -376,7 +460,13 @@ The table is empty, which means there was no product category which had not been
 shipped by any shipping company registered.
 This can be confirmed by executing the following query:
 
-TODO: insert mdx query
+```mdx
+SELECT
+    NON EMPTY Product.[Category Name].Members ON COLUMNS,
+    Shipper.[Company Name].Members ON ROWS
+FROM Orders
+WHERE Measures.Quantity
+```
 
 ![Results](screenshots/queries/category-shipper-pairs-with-no-quantity.2.png)
 
