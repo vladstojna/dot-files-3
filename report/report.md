@@ -78,6 +78,36 @@ Insert/Update
 
 ![Transformation](screenshots/DimProduct/DimProduct.png)
 
+Table Input (1)
+
+![Configuration](screenshots/DimProduct/TableInput.1.configuration.png)
+![Preview](screenshots/DimProduct/TableInput.1.preview.png)
+
+Select Values (1)
+
+![Configuration](screenshots/DimProduct/SelectValues.1.configuration.png)
+![Preview](screenshots/DimProduct/SelectValues.1.preview.png)
+
+Table Input (2)
+
+![Configuration](screenshots/DimProduct/TableInput.2.configuration.png)
+![Preview](screenshots/DimProduct/TableInput.2.preview.png)
+
+Select Values (2)
+
+![Configuration](screenshots/DimProduct/SelectValues.2.configuration.png)
+![Preview](screenshots/DimProduct/SelectValues.2.preview.png)
+
+Join Rows
+
+![Configuration](screenshots/DimProduct/JoinRows.configuration.png)
+![Preview](screenshots/DimProduct/JoinRows.preview.png)
+
+Dimension Lookup/Update
+
+![Configuration](screenshots/DimProduct/DimensionLookupUpdate.configuration.png)
+![Preview](screenshots/DimProduct/DimensionLookupUpdate.preview.png)
+
 ### [FactOrder](../etl/FactOrder.ktr)
 
 ![Transformation](screenshots/FactOrder/FactOrder.png)
