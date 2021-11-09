@@ -12,19 +12,29 @@ The codeshould be formatted and indented in a way that makes it easy to read for
 
 ![Transformation](screenshots/DimCustomer/DimCustomer.png)
 
-#### Table Input
+Table Input
 
 ![Configuration](screenshots/DimCustomer/TableInput.configuration.png)
 ![Preview](screenshots/DimCustomer/TableInput.preview.png)
 
-#### Insert/Update
+Insert/Update
 
 ![Configuration](screenshots/DimCustomer/InsertUpdate.configuration.png)
-![Configuration](screenshots/DimCustomer/InsertUpdate.preview.png)
+![Preview](screenshots/DimCustomer/InsertUpdate.preview.png)
 
 ### [DimShipper](../etl/DimShipper.ktr)
 
 ![Transformation](screenshots/DimShipper/DimShipper.png)
+
+Table Input
+
+![Configuration](screenshots/DimShipper/TableInput.configuration.png)
+![Preview](screenshots/DimShipper/TableInput.preview.png)
+
+Insert/Update
+
+![Configuration](screenshots/DimShipper/InsertUpdate.configuration.png)
+![Preview](screenshots/DimShipper/InsertUpdate.preview.png)
 
 ### [DimSupplier](../etl/DimSupplier.ktr)
 
