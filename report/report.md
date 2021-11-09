@@ -54,6 +54,26 @@ Insert/Update
 
 ![Transformation](screenshots/DimTime/DimTime.png)
 
+Table Input
+
+![Configuration](screenshots/DimTime/TableInput.configuration.png)
+![Preview](screenshots/DimTime/TableInput.preview.png)
+
+Calculator
+
+![Configuration](screenshots/DimTime/Calculator.configuration.png)
+![Preview](screenshots/DimTime/Calculator.preview.png)
+
+Value Mapper
+
+![Configuration](screenshots/DimTime/ValueMapper.configuration.png)
+![Preview](screenshots/DimTime/ValueMapper.preview.png)
+
+Insert/Update
+
+![Configuration](screenshots/DimTime/InsertUpdate.configuration.png)
+![Preview](screenshots/DimTime/InsertUpdate.preview.png)
+
 ### [DimProduct](../etl/DimProduct.ktr)
 
 ![Transformation](screenshots/DimProduct/DimProduct.png)
