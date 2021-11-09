@@ -10,7 +10,7 @@ The codeshould be formatted and indented in a way that makes it easy to read for
 
 ### [DimCustomer](../etl/DimCustomer.ktr)
 
-![DimCustomer](screenshots/DimCustomer/DimCustomer.png)
+![Transformation](screenshots/DimCustomer/DimCustomer.png)
 
 #### Table Input
 
@@ -24,23 +24,23 @@ The codeshould be formatted and indented in a way that makes it easy to read for
 
 ### [DimShipper](../etl/DimShipper.ktr)
 
-![DimShipper](screenshots/DimShipper/DimShipper.png)
+![Transformation](screenshots/DimShipper/DimShipper.png)
 
 ### [DimSupplier](../etl/DimSupplier.ktr)
 
-![DimSupplier](screenshots/DimSupplier/DimSupplier.png)
+![Transformation](screenshots/DimSupplier/DimSupplier.png)
 
 ### [DimTime](../etl/DimTime.ktr)
 
-![DimTime](screenshots/DimTime/DimTime.png)
+![Transformation](screenshots/DimTime/DimTime.png)
 
 ### [DimProduct](../etl/DimProduct.ktr)
 
-![DimProduct](screenshots/DimProduct/DimProduct.png)
+![Transformation](screenshots/DimProduct/DimProduct.png)
 
 ### [FactOrder](../etl/FactOrder.ktr)
 
-![FactOrder](screenshots/FactOrder/FactOrder.png)
+![Transformation](screenshots/FactOrder/FactOrder.png)
 
 ### Job to Populate the Data Warehouse
 
