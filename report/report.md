@@ -220,3 +220,17 @@ i.e., the customer's country.
 ![Results](screenshots/queries/country-pairs-with-no-quantity-shipped.2.png)
 
 ### f) [Analyze quantity by product category and shipping company to identify the pairs of category-shipper with no quantity at all](../analysis/product-category-shipping-company.md)
+
+Category-shipper pairs with no quantity
+
+![Results](screenshots/queries/category-shipper-pairs-with-no-quantity.1.png)
+
+The table is empty, which means there was no product category which had not been
+shipped by any shipping company registered.
+This can be confirmed by executing the following query:
+
+TODO: insert mdx query
+
+![Results](screenshots/queries/category-shipper-pairs-with-no-quantity.2.png)
+
+The table has no empty cells, therefore all categories have been shipped by all shipping companies.
