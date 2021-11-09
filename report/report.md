@@ -212,4 +212,11 @@ Customer country and category pairs with no sales
 
 ### e) [Analyze quantity by supplier country and customer country to identify the pairs of countries with no quantities being shipped between them](../analysis/supplier-country-customer-country.md)
 
+Country pairs with no quantity shipped: the first column represents the country shipped from,
+i.e., the supplier's country; the second column represents the country shipped to,
+i.e., the customer's country.
+
+![Results](screenshots/queries/country-pairs-with-no-quantity-shipped.1.png)
+![Results](screenshots/queries/country-pairs-with-no-quantity-shipped.2.png)
+
 ### f) [Analyze quantity by product category and shipping company to identify the pairs of category-shipper with no quantity at all](../analysis/product-category-shipping-company.md)
